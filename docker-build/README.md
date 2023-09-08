@@ -9,3 +9,7 @@ docker compose -f docker-compose.dev.yml up
 ```shell
 docker compose -f docker-compose.dev.yml up --build
 ```
+
+```shell
+docker compose up --build
+```

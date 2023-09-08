@@ -22,7 +22,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json .
 
-RUN yarn ci --only=production
+RUN yarn install --immutable --immutable-cache --check-cache --only=production
 
 COPY --from=development /usr/src/app/dist ./dist
 
